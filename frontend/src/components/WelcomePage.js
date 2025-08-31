@@ -10,7 +10,7 @@ function WelcomePage() {
       <h1 className="welcome-title">Welcome to Smart Expense Tracker 💰</h1>
       <p className="welcome-desc">
         Track, analyze, and manage your expenses with AI-powered insights.<br />
-        Add your expenses, view analytics, and get help from your personal chatbot assistant.
+        Add your expenses, view analytics, and get help from your personal chatbot assistant-Zekyn.
       </p>
       <button className="welcome-btn" onClick={() => navigate("/add")}>➕ Add Expense</button>
       <button className="welcome-btn" onClick={() => navigate("/analyse")}>📊 Analyse Expenses</button>

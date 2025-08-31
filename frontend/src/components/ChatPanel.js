@@ -9,7 +9,7 @@ function ChatPanel() {
   const [input, setInput] = useState("");
 
   const sendMessage = async () => {
-    const newMsg = { role: "user", content: input };
+    const newMsg = { role: "Me", content: input };
     setMessages([...messages, newMsg]);
     setInput("");
 
@@ -17,13 +17,13 @@ function ChatPanel() {
       message: input,
     });
 
-    const reply = { role: "assistant", content: res.data.reply };
+    const reply = { role: "Zekyn", content: res.data.reply };
     setMessages((prev) => [...prev, reply]);
   };
 
   return (
     <div className="chat-panel">
-      <h3 className="chat-title">💬 AI Assistant</h3>
+      <h3 className="chat-title">💬 Zekyn-AI Assistant</h3>
       <div className="chat-messages">
         {messages.map((msg, i) => (
           <p key={i}><b>{msg.role}:</b> {msg.content}</p>
