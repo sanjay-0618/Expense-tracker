@@ -1,0 +1,124 @@
+.expense-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.categorise-by {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.categorise-by label {
+  color: #1e3c72;
+  font-weight: 500;
+}
+.categorise-by select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #b0b0b0;
+  font-size: 1rem;
+  color: #1e3c72;
+  background: #f5f7fa;
+}
+.expense-table-total {
+  text-align: right;
+  font-size: 1.08rem;
+  color: #1e3c72;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.expense-table {
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(30, 60, 114, 0.08);
+  padding: 24px 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.expense-table h3 {
+  margin-bottom: 12px;
+  color: #1e3c72;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.expense-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.expense-table th, .expense-table td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  color: #1e3c72;
+  font-weight: 500;
+}
+.expense-table th {
+  background: #f5f7fa;
+  color: #1e3c72;
+  font-weight: 600;
+}
+.expense-table tr:last-child td {
+  border-bottom: none;
+}
+.expense-table p {
+  color: #da0000;
+  margin: 0;
+  font-size: 0.98rem;
+}
+/* AnalyseExpense.css - Styles for the analytics/charts page */
+
+.analyse-container {
+  background: rgba(0, 23, 45, 0.98);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 36px 32px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.analyse-title {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.analyse-chart {
+  background: #00172D;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px 16px;
+  margin-top: 12px;
+  width: 100%;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .filter-options {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .filter-options button {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: #fff;
+    color: #1e3c72;
+    transition: background 0.2s, color 0.2s;
+  }
+  .filter-options button:hover, .filter-options button.active {
+    background: #1e3c72;
+    color: #fff;
+  }

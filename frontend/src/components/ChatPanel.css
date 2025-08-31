@@ -1,0 +1,73 @@
+/* ChatPanel.css - Styles for the chat/assistant panel */
+
+.chat-panel {
+  flex: 1;
+  border-left: 2px solid var(--border);
+  padding: 24px 16px;
+  background: rgba(0, 23, 45, 0.98);
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius) 0 0 var(--radius);
+}
+
+.chat-title {
+  font-size: 1.2rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 16px;
+  background: #00172D;
+  border-radius: var(--radius);
+  padding: 12px;
+  box-shadow: var(--shadow);
+  color: #f5f7fa;
+}
+
+.chat-input {
+  display: flex;
+  gap: 8px;
+}
+
+.chat-input input[type="text"] {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s, background 0.2s;
+  background: #00172D;
+  color: #f5f7fa;
+}
+
+.chat-input input[type="text"]:focus {
+  border: 1.5px solid var(--primary);
+  background: #002244;
+}
+
+.chat-input button {
+  background: var(--button-gradient);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: var(--shadow);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.chat-input button:hover {
+  background: var(--button-hover);
+  color: #fff;
+}

@@ -1,0 +1,58 @@
+/* AddExpense.css - Styles for the Add Expense form */
+
+.add-expense-container {
+  background: rgba(0, 23, 45, 0.98);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 36px 32px;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-expense-title {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.add-expense-input {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 18px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  transition: border 0.2s, background 0.2s;
+  outline: none;
+  background: #00172D;
+  color: #f5f7fa;
+}
+.add-expense-input:focus {
+  border: 1.5px solid var(--primary);
+  background: #002244;
+}
+
+.add-expense-btn {
+  background: var(--button-gradient);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 12px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: var(--shadow);
+  width: 100%;
+  margin-top: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.add-expense-btn:hover {
+  background: var(--button-hover);
+  color: #fff;
+}

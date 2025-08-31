@@ -1,0 +1,50 @@
+/* WelcomePage.css - Styles for the welcome/landing page */
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  background: rgba(0, 23, 45, 0.98);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.welcome-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+
+.welcome-desc {
+  font-size: 1.1rem;
+  color: #b6c9e0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.welcome-btn {
+  background: var(--button-gradient);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 12px 28px;
+  font-size: 1rem;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: var(--shadow);
+  width: 220px;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.welcome-btn:hover {
+  background: var(--button-hover);
+  color: #fff;
+}
